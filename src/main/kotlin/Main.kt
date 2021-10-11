@@ -13,8 +13,9 @@ fun main(args: Array<String>) {
 //        println("Result: ${word?.let { dict.find(it) }}")
 //    }
 
-//    val dict2:IDictionary = TreeSetDictionary
-//    println("Number of words: ${dict.size()}")
+//    println("\n\nTest the TreeSetDictionary class using the given main function")
+//    val dict2:IDictionary  = TreeSetDictionary
+//    println("Number of words: ${dict2.size()}")
 //    var word2: String?
 //    while(true){
 //        print("What to find? ")
@@ -25,20 +26,37 @@ fun main(args: Array<String>) {
 //        println("Result: ${word2?.let { dict2.find(it) }}")
 //    }
 
+//    println("\n\nTest HashSetDictionary through the DictionaryProvider class\n")
+//    val dictprovider = DictionaryProvider()
+//    val dict3=dictprovider.createDictionary(DictionaryType.HASH_SET)
+//    println("Number of words: ${dict3.size()}")
+//    var word3: String?
+//    while(true){
+//        print("What to find? ")
+//        word3 = readLine()
+//        if( word3.equals("quit")){
+//            break
+//        }
+//        println("Result: ${word3?.let { dict3.find(it) }}")
+//    }
+//    println("add 'hash' ? -> ${dict3.add("hash")}")
+//    println("size: ${dict3.size()}")
+
+
     println("\nProblem2\n")
-    println("prints the monogram of a String containing the firstname and lastname.")
+    println("2.1 prints the monogram of a String containing the firstname and lastname.")
     val name="John Smith"
     println(name.Monogram())
 
-    println("\nreturns the elements of a strings’ list joined by a given separator")
+    println("\n2.2 returns the elements of a strings’ list joined by a given separator")
     val list= arrayListOf<String>("apple", "pear","strawberry", "melon")
     val separator= '#'
     println(list.listWithSeparator(separator))
 
-    println("\nreturns the the longest string")
+    println("\n2.3 returns the the longest string")
     println(list.theLondestStr())
 
-    println("\nProblem3\n")
+    println("\n\nProblem3\n")
     println("Leap year?")
     val date1=Date(1900,5,5)
     println("1900  ${date1.isLeapYear()}")

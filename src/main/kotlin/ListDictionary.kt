@@ -8,7 +8,8 @@ object ListDictionary : IDictionary{
     }
 
     override fun add(str : String) : Boolean{
-        if(!find(str)) {
+        if(words.contains(str) == false) {
+            words.add(str)
             return true
         }
         return false
